@@ -1,0 +1,3098 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SAOTP</class>
+ <widget class="QMainWindow" name="SAOTP">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SAOTP</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QWidget" name="mainWidget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>178</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="status">
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ожидание команды</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>158</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>Состояние</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Содержание неисправности</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние готовности</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Checked</enum>
+           </property>
+           <property name="text">
+            <string>Норма изделия 15Ц150(Неисправность изделия 15Ц150. Провести режим ДПП)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожар на объекте</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>ДПП не завершен</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>АКБ резервного источника питания разряжен</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Зафиксирована утечка ГОТВ в одном из МГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность системы контроля утечки ГОТВ</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Неисправность модулей</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с блоком &quot;БПУ-Ф&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с блоком &quot;БКИ КС-Ф1&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МИУП2&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МИУП3&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МИУП1&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МПУ-ФМ1&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МПУ-ФМ2&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МОПИ-Ф1&quot;. Провести ДПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Отсутствует связь с модулем &quot;МОПИ-Ф2&quot;. Провести ДПП</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Обрыв шлейфов</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв шлейфа &quot;шл.1&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв шлейфа &quot;шл.2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв шлейфа &quot;шл.3&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв шлейфа &quot;шл.4&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв шлейфа &quot;шл.5&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>КЗ шлейфов</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Короткое замыкание в шлейфе &quot;шл.1&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Короткое замыкание в шлейфе &quot;шл.2&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Короткое замыкание в шлейфе &quot;шл.3&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Короткое замыкание в шлейфе &quot;шл.4&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Короткое замыкание в шлейфе &quot;шл.5&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Неисправность ВТНК</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.1 (Помещение 6А)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.2(Помещение 6А)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.3 (Помещение 6)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.4 (Помещение 6)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.5 (Помещение 4)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.6 (Помещение 4)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.7 (Помещение 5)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.8 (Помещение 5)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.9 (Помещение 3)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.10 (Помещение 3)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.11 (Помещение 8)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.12 (Помещение 8)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.13 (Помещение 8А)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНК1.14 (Помещение 8А)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.1 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.2 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.3(Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.4 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.5 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.6 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.7 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.8 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.9 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи2.10 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.1 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.2 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.3 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.4 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.5 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.6 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.7 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.8 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.9 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи3.10 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.1 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.2 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.3 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.4 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.5 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.6 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.7 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.8 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.9 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи4.10 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.1 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.2 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.3 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.4 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.5 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.6 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.7 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.8 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.9 (Помещение 1)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность пожарного извещателя ВТНКи5.10 (Помещение 1)</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Запыленность ВТНК</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.1 (Помещение 6А)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.2 (Помещение 6А)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.3 (Помещение 6)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.4 (Помещение 6)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.5 (Помещение 4)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.6 (Помещение 4)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.7 (Помещение 5)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.8 (Помещение 5)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.9 (Помещение 3)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.10 (Помещение 3)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.11 (Помещение 8)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.12 (Помещение 8)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.13 (Помещение 8А)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНК 1.14 (Помещение 8А)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.1 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.2 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.3 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.4 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.5 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.6 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.7 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.8 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.9 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 2.10 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.1 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.2 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.3 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.4 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.5 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.6 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.7 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.8 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.9 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 3.10 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.1 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.2 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.3 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.4 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.5 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.6 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.7 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.8 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.9 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 4.10 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.1 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.2 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.3 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.4 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.5 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.6 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.7 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.8 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.9 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Пожарный извещатель &quot;ВТНКи 5.10 (Помещение 1)&quot; запылен. Продуть.</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Неисправность СДГ</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР1.1 МГ1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР1.2 МГ1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР2.1 МГ2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР2.2 МГ2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР3.1 МГ3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР3.2 МГ3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР4.1 МГ4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Неисправность сигнализатора давления газа НР4.2 МГ4</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Обрыв цепей ПП</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ5.1 МГ5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ5.2 МГ5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ6.1 МГ6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ6.2 МГ6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ7.1 МГ7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ7.2 МГ7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ8.1 МГ8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ8.2 МГ8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ9.1 МГ9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ9.2 МГ9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ10.1 МГ10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ10.2 МГ10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ11.1 МГ11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ11.2 МГ11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ12.1 МГ12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ12.2 МГ12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ13.1 МГ13</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ13.2 МГ13</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ14.1 МГ14</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ14.2 МГ14</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ1.1 МГ1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ1.1 МГ1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ2.1 МГ2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ2.2 МГ2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ3.1 МГ3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ3.2 МГ3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ4.1 МГ4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+           <property name="text">
+            <string>Обрыв цепи пиропатрона ЕТ4.2 МГ4</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 1</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 1</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 2</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 2</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 3</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 3</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 4</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 4</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 5</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 5</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 6</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 6</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 6А</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 6А</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 8</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 8</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Состояние помещения 8А</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Норма. Дежурный режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Внимание в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пожар в направлении</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Начата процедура пуска</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Отмена</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск ПП</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Не сработали СДГ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Пуск прошел</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Режим помещения 8А</string>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный ружим. Ручной режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Дежурный режим. Автоматический режим</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Дистанционный режим &quot;Основной&quot;</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Режим тушения. Автоматический режим тушения &quot;Основной&quot;</string>
+           </property>
+          </item>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QCheckBox" name="firstPort">
+           <property name="text">
+            <string>Первый адрес</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="secondPort">
+           <property name="text">
+            <string>Второй адрес</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="tristate">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="console">
+           <property name="text">
+            <string>Печатать в консоль</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

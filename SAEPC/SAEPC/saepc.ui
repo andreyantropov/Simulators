@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SAEPC</class>
+ <widget class="QMainWindow" name="SAEPC">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>SAEPC</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <widget class="QLabel" name="status">
+      <property name="text">
+       <string>Ожидание команды</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4" colspan="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0" colspan="6">
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string>Задать</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Содержание неисправности</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Состояние готовности</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Провести режим ДПП 15Р334</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Батареи комплекта 15Р281 ХИТ-А разряжены. Заменить комплект 15Р281</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Питание изделия 15Р334 осуществляется АИП</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отсутствует напряжение питающей сети на двух вводах</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Вызов НКП</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Изделие 15Ц151 отключено</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Изделие 15Щ72 отключено</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Неисправность ППС</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС1. Заменить ППС1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС2. Заменить ППС2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС3. Заменить ППС3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС4. Заменить ППС4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС5. Заменить ППС5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС6. Заменить ППС6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС7. Заменить ППС7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС8. Заменить ППС8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС9. Заменить ППС9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ППС10. Заменить ППС10</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Неисправность ПС</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ПС1. Заменить ПС1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ПС2. Заменить ПС2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ПС3. Заменить ПС3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма U вых. ПС4. Заменить ПС4</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Состояние изоляции GB комплектов</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB1 комплекта ХИТ-Д1. Заменить GB1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB2 комплекта ХИТ-Д2. Заменить GB2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB1 комплекта ХИТ-Д1. Заменить GB1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB2 комплекта ХИТ-Д2. Заменить GB2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB комплекта ХИТ-П. Заменить GB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB комплекта ХИТ-Р. Произвести поиск и заменить неисправную GB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции группы батарей GB1-GB32 БА1 комплекта ХИТ-А. Провести поиск и заменить неисправную GB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции группы батарей GB33-GB64 БА2 комплекта ХИТ-А. Провести поиск и заменить неисправную GB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции группы батарей GB65-GB80 БА3 комплекта ХИТ-А. Провести поиск и заменить неисправную GB</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Состояние УР</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB1 комплекта ХИТ-М. Произвести поиск и заменить неисправную GB1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма R изоляции GB32 комплекта ХИТ-М. Произвести поиск и заменить неисправную GB2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма БЗТ ВВОДА1 УР. Заменить УР</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма БЗТ ВВОДА2 УР. Заменить УР</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Короткое замыкание одного из фидеров питания потребителей переменного тока УР. Устранить причину короткого замыкания</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма коммутационной аппаратуры БАУ1ю Заменить БАУ1</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Неисправность коммутационной аппаратуры</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма БЗН U вых. ПС1-ПС4. Заменить БЗН</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма КСУ. Заменить КСУ</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма коммутационной аппаратуры БА4-1. Заменить БА4-1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма коммутационной аппаратуры БА4-2. Заменить БА4-2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма БЗТ канал 1 БА4-2. Заменить БА4-2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма БЗТ канал 2 БА4-2. Заменить БА4-2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма коммутационной аппаратуры БА5-1. Заменить БА5-1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Неисправность изделия 15Р334. Не норма коммутационной аппаратуры БА5-2. Заменить БА5-2</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Напряжение на шинах</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма напряжения на шине &quot;М&quot;. Заменить ППС9, ППС10</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма напряжения на шине &quot;ПД&quot;. Заменить БА4-1, БА4-2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма напряжения на шине &quot;М&quot;. Заменить ППС7, ППС8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Не норма напряжения на шине &quot;М&quot;. Заменить ППС1-ППС6</string>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Отказ связи</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отказ связи с изделием 15Р334. Включить режим ДПП</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отказ связи с основныи интерфейсным модулем изделия 15Р334 по основной линии связи. Проверить соединение</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отказ связи с резервныи интерфейсным модулем изделия 15Р334 по резервной линии связи. Проверить соединение</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отказ связи с резервным интерфейсным модулем издели 15Р334 по основной линии связи. Проверить соединение</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отказ связи с основным интерфейсным модулем изделия 15Р334 по резервной линии связи. Проверить соединение</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkState">
+         <enum>Unchecked</enum>
+        </property>
+        <property name="text">
+         <string>Отказ релейных связей с изделием 15Р334. Проверить соединение</string>
+        </property>
+       </item>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QCheckBox" name="firstPort">
+      <property name="text">
+       <string>Первый адрес</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QCheckBox" name="secondPort">
+      <property name="text">
+       <string>Второй адрес</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3" colspan="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>134</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="5">
+     <widget class="QCheckBox" name="console">
+      <property name="text">
+       <string>Вывести в консоль</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
